@@ -1,0 +1,14 @@
+fastapi
+uvicorn[standard]
+httpx
+pandas
+numpy
+scipy
+matplotlib
+seaborn
+scikit-learn
+pydantic
+pytest
+jupyterlab
+statsmodels
+plotly
