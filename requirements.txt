@@ -12,3 +12,4 @@ pytest
 jupyterlab
 statsmodels
 plotly
+python-dotenv

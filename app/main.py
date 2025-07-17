@@ -1,13 +1,12 @@
 from fastapi import FastAPI
-from app import services
+from app.api.OlympicRoute import router as olympics_router
+from app.api.LocalRoute import router as local_router
 
-app = FastAPI()
+app = FastAPI(
+    title="Olympics & Sports API",
+    description="API con datos locales y conexión a RapidAPI",
+    version="1.0.0"
+)
 
-@app.get("/health")
-def health_check():
-    return {"status": "ok"}
-
-@app.get("/deportes")
-def obtener_datos_deportivos():
-    datos = services.cargar_csv()
-    return {"datos": datos}
+app.include_router(olympics_router, prefix="/external", tags=["Olympics"])
+app.include_router(local_router, prefix="/local", tags=["Local Data"])
