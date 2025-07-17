@@ -1,10 +1,9 @@
-1. 📄 Descripción general del proyecto
+1. Descripción general del proyecto
  - Nombre del código: MarathonApi
- - Versión: 1.0.0
  - Explicación general: API para obtener datos deportivos, combinando datos locales con una conexión a RapidAPI para información olímpica.
  - Problema resuelto: Facilita el acceso a datos de maratones y eventos olímpicos a través de una interfaz unificada.
 
-2. ⚙️ Visión general del sistema
+2.  Visión general del sistema
  - Arquitectura del sistema:
  ```mermaid
  graph LR
